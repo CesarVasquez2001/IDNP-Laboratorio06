@@ -125,10 +125,6 @@ public class PieView extends View {
 //        postInvalidate();
     }
 
-    /**
-     * Set startDegree and endDegree for each PieHelper
-     * @param helperList
-     */
     private void initPies(ArrayList<PieHelper> helperList){
         float totalAngel = 270;
         for(PieHelper pie:helperList){
@@ -222,12 +218,6 @@ public class PieView extends View {
         return true;
     }
 
-    /**
-     * find pie index where point is
-     * @param x
-     * @param y
-     * @return
-     */
     private int findPointAt(int x, int y){
         double degree = Math.atan2(x-pieCenterPoint.x, y-pieCenterPoint.y)* 180 / Math.PI;
         degree = -(degree-180) + 270;

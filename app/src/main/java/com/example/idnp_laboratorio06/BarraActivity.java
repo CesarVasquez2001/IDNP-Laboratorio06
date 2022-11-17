@@ -6,11 +6,6 @@ import android.os.Bundle;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import android.app.Activity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-
 
 public class BarraActivity extends AppCompatActivity {
     BarView barView;

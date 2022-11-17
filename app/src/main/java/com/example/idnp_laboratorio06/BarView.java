@@ -81,12 +81,8 @@ public class BarView extends View {
         percentList = new ArrayList<Float>();
     }
 
-    /**
-     * dataList will be reset when called is method.
-     * @param bottomStringList The String ArrayList in the bottom.
-     */
+
     public void setBottomTextList(ArrayList<String> bottomStringList){
-//        this.dataList = null;
         this.bottomTextList = bottomStringList;
         Rect r = new Rect();
         bottomTextDescent = 0;
@@ -107,10 +103,6 @@ public class BarView extends View {
         postInvalidate();
     }
 
-    /**
-     *
-     * @param list The ArrayList of Integer with the range of [0-max].
-     */
     public void setDataList(ArrayList<Integer> list, int max){
         targetPercentList = new ArrayList<Float>();
         if(max == 0) max = 1;

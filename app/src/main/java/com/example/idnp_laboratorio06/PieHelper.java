@@ -11,10 +11,6 @@ public class PieHelper {
 
     int velocity = 5;
 
-    /**
-     *
-     * @param percent from 0 to 100
-     */
     public PieHelper(float percent){
         this(percent, null, 0);
     }
@@ -23,21 +19,10 @@ public class PieHelper {
         this(percent, null, color);
     }
 
-    /**
-     *
-     * @param percent from 0 to 100
-     * @param title
-     */
     PieHelper(float percent, String title){
         this(percent, title, 0);
     }
 
-    /**
-     *
-     * @param percent from 0 to 100
-     * @param title
-     * @param color
-     */
     PieHelper(float percent, String title, int color){
         this.sweepDegree = percent * 360 / 100;
         this.title = title;
